@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f9fbff" />
+<title>百舸数智平台</title>
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar" aria-label="工作空间导航">
+<a class="brand" href="#home" aria-label="百舸数智平台首页"><svg class="brand-mark" viewBox="0 0 32 36" aria-hidden="true"><path d="M5 2 24 16H5Z M5 18 29 27H5Z M3 30H30L24 35H9Z" fill="currentColor"/></svg><span>百舸<span class="brand-subtitle">数智平台</span></span></a>
+<nav id="navigation" aria-label="主导航"></nav>
+<div class="workspace"><span class="workspace-symbol">院</span><span>中船综合院<small>数智工作空间</small></span></div>
+<div class="sidebar-footer"><span>百舸 · 让知识连接工作</span><button class="icon-button" id="collapseButton" aria-label="收起导航" title="收起导航"></button></div>
+</aside>
+<main class="main-area" id="pageHost" aria-label="当前页面"></main>
+</div>
+<noscript>请在浏览器中启用 JavaScript，以使用百舸数智平台原型。</noscript>
+<!-- 普通本地脚本顺序加载，支持双击 HTML，无需服务。 -->
+<script src="./src/data.js"></script>
+<script src="./src/ui.js"></script>
+<script src="./src/app.js"></script>
+</body>
+</html>

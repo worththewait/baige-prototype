@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T11:13:02.946625+00:00",
+  "title": "Design System: 百舸数智平台",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "亮蓝"
+      },
+      "tool-purple": {
+        "role": "secondary",
+        "displayName": "工具紫"
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "淡蓝白画布"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "白色表面"
+      }
+    },
+    "typographyMeta": {
+      "tools-title": {
+        "displayName": "热门工具标题",
+        "purpose": "智能工具页顶部标题。"
+      },
+      "group-title": {
+        "displayName": "分类标题",
+        "purpose": "工具目录中的分类名称。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "featured-text-shadow",
+        "value": "0 2px 10px #05091f",
+        "purpose": "图片白字的 text-shadow；界面表面没有 box-shadow。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.2, .8, .2, 1)",
+        "purpose": "按钮颜色及图片缩放过渡。"
+      },
+      {
+        "name": "control-duration",
+        "value": "180ms",
+        "purpose": "按钮颜色、边框与导航箭头。"
+      },
+      {
+        "name": "image-duration",
+        "value": "240ms",
+        "purpose": "热门图片悬停缩放。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-desktop",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "主按钮",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "首页发送按钮。",
+      "html": "<button class=\"ds-primary\">发送</button>",
+      "css": ".ds-primary{font:13px/1.6 var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif);cursor:pointer;transition:background-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1));display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 16px;border:1px solid var(--accent,#245bff);border-radius:7px;background:var(--accent,#245bff);color:white}.ds-primary:hover{background:var(--accent-hover,#1546d8);border-color:var(--accent-hover,#1546d8)}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    },
+    {
+      "name": "次按钮",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "清除筛选及返回目录。",
+      "html": "<button class=\"ds-secondary\">清除筛选</button>",
+      "css": ".ds-secondary{font:13px/1.6 var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif);cursor:pointer;transition:background-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1));display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 16px;border:1px solid var(--line-strong,#d4dceb);border-radius:7px;background:var(--surface,#fff);color:var(--ink,#202735)}.ds-secondary:hover{background:var(--accent-soft,#e7eeff);border-color:#b9caff;color:var(--accent-hover,#1546d8)}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    },
+    {
+      "name": "当前导航",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "侧栏的当前智能工具入口。",
+      "html": "<button class=\"ds-nav\" aria-current=\"page\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/></svg>智能工具</button>",
+      "css": ".ds-nav{font:13px/1.6 var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif);cursor:pointer;transition:background-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1));width:186px;min-height:34px;display:flex;align-items:center;gap:12px;padding:6px 12px;border:0;border-radius:7px;background:var(--accent-soft,#e7eeff);color:var(--accent-hover,#1546d8);font-weight:600;text-align:left}.ds-nav svg{width:18px;height:18px}.ds-nav:hover{background:var(--accent-soft,#e7eeff)}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    },
+    {
+      "name": "工具搜索",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "分类目录即时搜索的输入外观。",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"10\" r=\"6\"/><path d=\"m15 15 6 6\"/></svg><input type=\"search\" aria-label=\"搜索工具\" placeholder=\"搜索工具名称或用途\"/></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:9px;min-height:36px;width:230px;padding:0 12px;border:1px solid var(--line-strong,#d4dceb);border-radius:7px;background:var(--surface,#fff);color:var(--muted,#687187)}.ds-search svg{width:16px;height:16px;flex-shrink:0}.ds-search input{font:12px/1.6 var(--font,sans-serif);width:100%;min-width:0;border:0;outline:0;background:transparent;color:var(--ink,#202735);caret-color:var(--accent,#245bff)}.ds-search input::placeholder{color:var(--muted,#687187);opacity:1}.ds-search:focus-within{border-color:var(--accent,#245bff);outline:2px solid var(--accent-soft,#e7eeff);outline-offset:2px}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    },
+    {
+      "name": "分类标签",
+      "kind": "chip",
+      "refersTo": "category-active",
+      "description": "蓝色下划线表示已选分类。",
+      "html": "<button class=\"ds-category\" aria-pressed=\"true\">全部工具</button>",
+      "css": ".ds-category{font:13px/1.6 var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif);cursor:pointer;transition:background-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1));min-height:36px;padding:6px 0 10px;border:0;border-bottom:2px solid var(--accent,#245bff);background:transparent;color:var(--accent,#245bff);font-weight:500;white-space:nowrap}.ds-category:hover{color:var(--accent,#245bff)}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    },
+    {
+      "name": "热门图片入口",
+      "kind": "card",
+      "refersTo": "featured-art",
+      "description": "OCR识别图片入口，内联项目原有几何 SVG。",
+      "html": "<button class=\"ds-featured\"><span class=\"ds-art\"><svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 380\"><defs><linearGradient id=\"bg\" x2=\"1\" y2=\"1\"><stop stop-color=\"#060c25\"/><stop offset=\"1\" stop-color=\"#17234c\"/></linearGradient><linearGradient id=\"pane\" x2=\"1\" y2=\".25\"><stop stop-color=\"#0648f7\" stop-opacity=\".25\"/><stop offset=\".55\" stop-color=\"#456eff\" stop-opacity=\".75\"/><stop offset=\"1\" stop-color=\"#c8b9ff\"/></linearGradient></defs><rect width=\"720\" height=\"380\" fill=\"url(#bg)\"/><path d=\"M75 66 L315 44 L315 273 L75 296Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M119 76 L359 54 L359 283 L119 306Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M163 86 L403 64 L403 293 L163 316Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M207 96 L447 74 L447 303 L207 326Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M251 106 L491 84 L491 313 L251 336Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M295 116 L535 94 L535 323 L295 346Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M339 126 L579 104 L579 333 L339 356Z\" fill=\"url(#pane)\" stroke=\"#758eff\" stroke-opacity=\".5\" stroke-width=\"1\"/><path d=\"M384 280V260.0\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M390 280V266.8\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M396 280V271.2\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M402 280V271.7\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M408 280V268.1\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M414 280V261.7\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M420 280V254.7\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M426 280V249.5\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M432 280V248.0\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M438 280V250.7\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M444 280V256.6\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M450 280V263.7\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M456 280V269.5\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M462 280V272.0\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M468 280V270.3\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M474 280V264.9\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M480 280V257.9\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M486 280V251.6\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M492 280V248.2\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M498 280V249.0\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M504 280V253.6\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M510 280V260.4\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M516 280V267.1\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/><path d=\"M522 280V271.3\" stroke=\"#e4eaff\" stroke-width=\"2\" opacity=\".8\"/></svg><span class=\"ds-art-title\">让资料，成为知识</span></span><span class=\"ds-featured-name\">OCR识别<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12h15 m-6-6 6 6-6 6\"/></svg></span><span class=\"ds-featured-description\">将图片、扫描件中的文字转为可编辑内容。</span></button>",
+      "css": ".ds-featured{font:13px/1.6 var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif);cursor:pointer;transition:background-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1));width:320px;max-width:100%;display:block;padding:0;border:0;background:transparent;text-align:left;color:var(--ink,#202735)}.ds-art{display:block;position:relative;aspect-ratio:1.89;overflow:hidden;border-radius:12px;background:#09132e}.ds-art>svg{width:100%;height:100%;display:block;transition:transform 240ms var(--ease,cubic-bezier(.2,.8,.2,1))}.ds-art-title{position:absolute;left:22px;bottom:20px;font-size:20px;font-weight:600;color:#fff;text-shadow:0 2px 10px #05091f}.ds-featured-name{display:flex;align-items:center;justify-content:space-between;margin-top:17px;font-size:16px;font-weight:600}.ds-featured-name svg{width:16px;height:16px;opacity:0;color:var(--accent,#245bff);transition:opacity 180ms}.ds-featured-description{display:block;margin-top:8px;font-size:12px;line-height:1.8;color:var(--muted,#687187)}.ds-featured:hover .ds-art>svg{transform:scale(1.035)}.ds-featured:hover .ds-featured-name{color:var(--accent,#245bff)}.ds-featured:hover .ds-featured-name svg{opacity:1}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    },
+    {
+      "name": "工具条目",
+      "kind": "custom",
+      "refersTo": "tool-icon",
+      "description": "紫色图标、名称和说明组成的目录入口。",
+      "html": "<button class=\"ds-tool\"><span class=\"ds-tool-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 3H3v5 M16 3h5v5 M21 16v5h-5 M8 21H3v-5 M7 8h10 M7 12h10 M7 16h7\"/></svg></span><span class=\"ds-tool-copy\"><span class=\"ds-tool-name\">OCR识别</span><span class=\"ds-tool-description\">将图片、扫描件中的文字转为可编辑内容。</span></span></button>",
+      "css": ".ds-tool{font:13px/1.6 var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif);cursor:pointer;transition:background-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),color 180ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 180ms var(--ease,cubic-bezier(.2,.8,.2,1));width:300px;display:flex;align-items:flex-start;gap:16px;padding:10px 0;border:0;background:transparent;text-align:left;color:var(--ink,#202735)}.ds-tool-icon{flex:0 0 50px;width:50px;height:50px;display:grid;place-items:center;border:1px solid #e5dbff;border-radius:5px;background:var(--tool-purple-soft,#f0eaff);color:var(--tool-purple,#8957ed)}.ds-tool-icon svg{width:25px;height:25px}.ds-tool-copy{display:block;min-width:0;padding-top:1px}.ds-tool-name{display:block;font-size:15px;font-weight:500;line-height:1.7}.ds-tool-description{display:block;margin-top:6px;font-size:12px;line-height:1.8;color:var(--muted,#687187)}.ds-tool:hover .ds-tool-name{color:var(--accent,#245bff)}.ds-tool:hover .ds-tool-icon{background:#e8ddff;border-color:#ceb9ff}button:focus-visible{outline:2px solid var(--accent,#245bff);outline-offset:4px}@media(prefers-reduced-motion:reduce){button,svg{transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "参考图中的桌面工具目录",
+    "overview": "当前桌面版依据用户最初第二张参考图片：白色侧栏、淡蓝白画布与亮蓝导航状态，智能工具页上方为三张深蓝紫几何图片入口，下方为分类三列工具目录。此文档记录已实现的界面，不引入新的设计方向。",
+    "keyCharacteristics": [
+      "白侧栏与淡蓝白画布",
+      "亮蓝选择与焦点状态",
+      "深蓝紫技术几何图片",
+      "紫色图标、名称、说明组成三列目录"
+    ],
+    "rules": [],
+    "dos": [
+      "Do 保留智能工具的三张图片入口与分类三列目录。",
+      "Do 使用本地系统字体、内联图标和相对资源路径，保证文件夹离线分发。",
+      "Do 对未接入能力显示“正在集成”，保留可见键盘焦点和减少动态效果设置。"
+    ],
+    "donts": [
+      "Don't 将智能工具改回用户已否定的“科研资料工作台”列表方向。",
+      "Don't 添加手机版或窄屏重排；当前范围为桌面。",
+      "Don't 将本地几何 SVG 替换为需要外部联网或版权授权的图片。"
+    ]
+  }
+}

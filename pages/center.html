@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>功能中心 · 百舸数智平台</title><link rel="stylesheet" href="../styles.css" /><link rel="stylesheet" href="../workspace.css" /></head>
+<body class="module-page" data-page="center">
+<main class="module-main"><div class="content-scroll" id="contentScroll"><div class="content-inner feature-center">
+  <div class="page-header"><div><h1>功能中心</h1><p>让每一项工作，都有趁手的工具。</p></div><label class="center-search"><span data-icon="search" aria-hidden="true"></span><span class="sr-only">搜索功能或工具</span><input id="featureSearch" type="search" placeholder="搜索功能或工具" autocomplete="off" /><kbd aria-hidden="true">⌘ K</kbd></label></div>
+  <div class="center-toolbar"><div id="centerGroups" class="center-groups" role="tablist" aria-label="功能分类"></div><label class="available-filter"><input id="availableOnly" type="checkbox" />仅看已开通</label></div>
+  <div id="centerFilters" class="center-filters" role="group" aria-label="工具分类"></div>
+  <p id="featureSearchSummary" class="center-summary" role="status"></p>
+  <section id="featureResults" class="feature-grid" aria-label="平台功能"></section>
+</div></div></main>
+<dialog class="home-access-dialog" id="homeAccessDialog" aria-labelledby="homeAccessTitle" aria-describedby="homeAccessDescription"><h2 id="homeAccessTitle">暂无该功能权限</h2><p id="homeAccessDescription"></p><p class="home-access-feedback" id="homeAccessFeedback" role="status"></p><div class="home-access-actions"><button class="home-access-dismiss" type="button" id="closeHomeAccess" autofocus>关闭</button><button class="primary-button" type="button" id="applyHomeAccess">申请权限</button></div></dialog>
+<script src="../src/data.js"></script><script src="../src/ui.js"></script><script src="../src/catalog.js"></script><script src="../src/page-bridge.js"></script><script src="../src/home-access.js"></script><script src="../src/pages/center.js"></script>
+</body></html>

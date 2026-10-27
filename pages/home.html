@@ -1,53 +1,60 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>首页 · 百舸数智平台</title>
-  <link rel="stylesheet" href="../styles.css" />
-</head>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>新对话 · 百舸数智平台</title><link rel="stylesheet" href="../styles.css" /><link rel="stylesheet" href="../workspace.css" /><link rel="stylesheet" href="../conversation.css" /></head>
 <body class="module-page" data-page="home">
-  <main class="module-main">
-    <div class="content-scroll" id="contentScroll">
-      <div class="content-inner home-page" id="content">
-<section id="conversationView">
-      <div class="page-header">
-        <div><h1>你好，这里是百舸</h1>
-        <p>从一个问题、一份资料，开始今天的研究与创作。</p></div>
+<main class="module-main conversation-main">
+  <header class="chat-toolbar" aria-label="对话操作">
+    <button id="toggleHistory" class="chat-toolbar-button" type="button" aria-expanded="false" aria-controls="conversationHistory"><span data-icon="history"></span><span>历史会话</span></button>
+    <span id="activeConversationLabel" class="active-conversation-label">百舸问答</span>
+    <div class="chat-toolbar-actions"><button id="toggleSource" class="chat-toolbar-button" type="button" aria-expanded="false" aria-controls="sourcePanel" hidden><span data-icon="file"></span><span>原文</span></button><button id="newConversation" class="icon-button" type="button" aria-label="开始新对话" title="新对话"><span data-icon="newchat"></span></button></div>
+  </header>
+  <div id="conversationWorkspace" class="conversation-workspace">
+  <aside id="conversationHistory" class="conversation-history" aria-labelledby="historyTitle" hidden>
+    <div class="chat-panel-heading"><h2 id="historyTitle">历史会话</h2><button id="closeHistory" class="icon-button" type="button" aria-label="收起历史会话" title="收起历史会话"><span data-icon="panel"></span></button></div>
+    <label class="history-search"><span data-icon="search"></span><span class="sr-only">搜索历史会话</span><input id="historySearch" type="search" placeholder="搜索会话" autocomplete="off" /></label>
+    <nav id="historyList" class="history-list" aria-label="已保存的会话"></nav>
+    <div class="history-footer"><button class="history-example" type="button" data-open-example><span data-icon="book"></span><span>引用与原文示例</span><span data-icon="chevron"></span></button><p id="historyStorageNote">会话保存在当前浏览器</p></div>
+  </aside>
+  <div class="conversation-stage">
+  <div class="conversation-page">
+    <header class="conversation-heading"><h1 id="conversationTitle">今天，有什么可以帮你？</h1><p id="conversationSubtitle">提问、梳理资料，或开始一项研究工作。</p></header>
+    <section id="conversationLog" class="conversation-log" aria-label="对话记录" aria-live="polite" hidden></section>
+    <form id="conversationForm" class="question-composer">
+      <div id="selectedKnowledge" class="selected-knowledge" hidden></div>
+      <label class="sr-only" for="conversationPrompt">输入你的问题</label><textarea id="conversationPrompt" placeholder="向百舸提问，或描述你想完成的工作…" rows="3"></textarea>
+      <div id="conversationAttachments" class="conversation-attachments" hidden></div>
+      <div class="question-composer-toolbar">
+        <div class="composer-context-controls"><input id="attachmentInput" type="file" multiple hidden /><button id="addAttachment" class="icon-button" type="button" aria-label="添加附件" title="添加附件"><span data-icon="plus" aria-hidden="true"></span></button><div class="question-modes" role="group" aria-label="问答方式"><button id="generalMode" class="question-mode is-active" type="button" aria-pressed="true"><span data-icon="chat" aria-hidden="true"></span>通用问答</button><button id="knowledgeMode" class="question-mode" type="button" aria-pressed="false"><span data-icon="book" aria-hidden="true"></span>知识问答</button></div></div>
+        <div class="composer-actions"><button id="sendQuestion" class="send-question" type="submit" aria-label="发送问题" title="发送问题" disabled><span data-icon="arrow" aria-hidden="true"></span></button></div>
       </div>
-      <div class="home-workspace">
-        <section class="conversation" aria-labelledby="conversationTitle">
-          <h2 id="conversationTitle">今天想研究什么？</h2>
-          <form id="conversationForm" class="composer">
-            <label class="sr-only" for="homePrompt">对话内容</label>
-            <textarea id="homePrompt" placeholder="输入问题，或描述你需要完成的工作…" rows="4"></textarea>
-            <div class="composer-bottom"><span><span data-icon="chat" aria-hidden="true"></span>对话</span>
-            <button class="primary-button" type="submit">发送<span data-icon="arrow" aria-hidden="true"></span></button></div>
-          </form>
-          <p class="form-feedback" id="conversationFeedback" role="status"></p>
-        </section>
-        <section class="research-links" aria-labelledby="researchTitle">
-          <h2 id="researchTitle">研究与探索</h2>
-          <button class="research-link" data-route="frontier" data-child="全球鹰"><span data-icon="globe" aria-hidden="true"></span><span>全球鹰<small>前沿工具</small></span><span data-icon="arrow" aria-hidden="true"></span></button>
-          <button class="research-link" data-route="frontier" data-child="智研通"><span data-icon="compass" aria-hidden="true"></span><span>智研通<small>前沿工具</small></span><span data-icon="arrow" aria-hidden="true"></span></button>
-          <button class="research-link" data-shortcut="smart-tools"><span data-icon="grid" aria-hidden="true"></span><span>智能工具<small>文档、写作与研究辅助</small></span><span data-icon="arrow" aria-hidden="true"></span></button>
-        </section>
-      </div>
-      <section class="home-section" aria-labelledby="workflowTitle">
-        <div class="section-heading"><h2 id="workflowTitle">从工作场景出发</h2><span>选择你的下一步</span></div>
-        <div class="workflow-list">
-          <button data-shortcut="knowledge" class="workflow-entry"><span data-icon="book" aria-hidden="true"></span><h3>查阅知识</h3><p>连接部门、行业、个人与企业知识。</p><span>打开知识库<span data-icon="arrow" aria-hidden="true"></span></span></button>
-          <button data-shortcut="writing" class="workflow-entry"><span data-icon="pen" aria-hidden="true"></span><h3>组织表达</h3><p>从主题和框架出发，完成专业内容。</p><span>进入百舸写作<span data-icon="arrow" aria-hidden="true"></span></span></button>
-          <button data-shortcut="smart-tools" class="workflow-entry"><span data-icon="layers" aria-hidden="true"></span><h3>处理资料</h3><p>翻译、识别、校对，找到适合的工具。</p><span>浏览智能工具<span data-icon="arrow" aria-hidden="true"></span></span></button>
-        </div>
-      </section>
-</section>
-      </div>
+    </form>
+    <p class="conversation-context-note"><span data-icon="book" aria-hidden="true"></span><span id="knowledgeModeHint">选择“知识问答”，将知识库加入本次对话。</span></p>
+    <div id="conversationWelcome" class="conversation-welcome">
+      <section class="question-suggestions" aria-labelledby="suggestionTitle"><div class="welcome-section-heading"><h2 id="suggestionTitle">试试这些方向</h2><button id="refreshQuestions" class="text-button" type="button"><span data-icon="refresh" aria-hidden="true"></span>换一批</button></div><div id="suggestedQuestions" class="suggested-questions"></div></section>
     </div>
-  </main>
-  <script src="../src/data.js"></script>
-  <script src="../src/ui.js"></script>
-  <script src="../src/page-bridge.js"></script>
-  <script src="../src/pages/home.js"></script>
-</body>
-</html>
+    <p id="conversationFeedback" class="conversation-footnote" role="status">内容由人工智能生成，请结合实际资料核实。</p>
+    <button id="welcomeExample" class="conversation-example-link text-button" type="button" data-open-example>看看知识问答如何引用资料<span data-icon="arrow"></span></button>
+  </div>
+  </div>
+  <aside id="sourcePanel" class="source-panel" aria-label="原文预览" hidden>
+    <div id="sourceReader" class="source-reader">
+      <div class="chat-panel-heading"><h2>原文预览</h2><div class="source-heading-actions"><button id="expandSource" class="icon-button" type="button" aria-label="展开阅读" title="展开阅读"><span data-icon="expand"></span></button><button id="closeSource" class="icon-button" type="button" aria-label="收起原文" title="收起原文"><span data-icon="close"></span></button></div></div>
+      <div class="source-document-info"><span class="source-file-icon" data-icon="file"></span><div><h3 id="sourceDocumentTitle"></h3><p id="sourceDocumentMeta"></p></div></div>
+      <div id="sourceControls" class="source-controls"><div class="source-page-controls"><button id="previousSourcePage" class="icon-button" type="button" aria-label="上一页" title="上一页"><span data-icon="back"></span></button><label><span class="sr-only">文档页码</span><select id="sourcePageSelect"></select></label><button id="nextSourcePage" class="icon-button" type="button" aria-label="下一页" title="下一页"><span data-icon="arrow"></span></button></div><div class="source-zoom-controls"><button id="zoomOutSource" class="icon-button" type="button" aria-label="缩小原文" title="缩小"><span data-icon="minus"></span></button><output id="sourceZoomLabel" aria-live="polite">100%</output><button id="zoomInSource" class="icon-button" type="button" aria-label="放大原文" title="放大"><span data-icon="plus"></span></button></div></div>
+      <div id="sourceLocation" class="source-location"></div>
+      <div id="sourceViewport" class="source-viewport" tabindex="0" aria-label="原文阅读区域"><div id="sourcePaper" class="source-paper"></div></div>
+      <footer class="source-footer"><span>示例原文 · 用于展示引用交互</span><span id="sourcePageCount"></span></footer>
+    </div>
+  </aside>
+  </div>
+</main>
+<dialog id="expandedSourceDialog" class="expanded-source-dialog" aria-label="展开阅读原文"></dialog>
+<dialog id="knowledgeDialog" class="knowledge-selector" aria-labelledby="knowledgeDialogTitle">
+  <div class="knowledge-selector-heading"><div><h2 id="knowledgeDialogTitle">选择知识库</h2><p>选择本次问答参考的资料范围</p></div><button id="closeKnowledgeDialog" class="icon-button" type="button" aria-label="关闭知识库选择"><span data-icon="close" aria-hidden="true"></span></button></div>
+  <div id="knowledgeCategories" class="knowledge-selector-tabs" role="tablist" aria-label="知识库范围"></div>
+  <label class="knowledge-selector-search"><span data-icon="search" aria-hidden="true"></span><span class="sr-only">搜索知识库名称</span><input id="knowledgeSearch" type="search" placeholder="搜索知识库名称" autocomplete="off" /></label>
+  <div id="knowledgeChoices" class="knowledge-choices" role="tabpanel" aria-label="可选知识库"></div>
+  <div class="knowledge-selector-footer"><div><p id="knowledgeSelectionCount" role="status">已选 0 个知识库</p><small>原型示例，可跨分类多选</small></div><div><button id="cancelKnowledge" class="secondary-button" type="button">取消</button><button id="confirmKnowledge" class="primary-button" type="button" disabled>确定</button></div></div>
+</dialog>
+<script src="../src/data.js"></script><script src="../src/ui.js"></script><script src="../src/page-bridge.js"></script><script src="../src/conversation-data.js"></script><script src="../src/conversation-store.js"></script><script src="../src/source-reader.js"></script><script src="../src/pages/conversation.js"></script>
+</body></html>

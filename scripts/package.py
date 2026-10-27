@@ -7,6 +7,8 @@ PACKAGE_NAME = "百舸数智平台原型"
 RUNTIME_FILES = (
     "index.html",
     "styles.css",
+    "workspace.css",
+    "conversation.css",
     "README.md",
 )
 RUNTIME_DIRECTORIES = ("pages", "src", "assets")

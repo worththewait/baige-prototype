@@ -12,10 +12,11 @@ const tools = [
  {name:"文献伴读",group:"研究辅助",icon:"book",description:"梳理文献重点，理解研究方法与核心结论。"},
  {name:"思维导图生成",group:"研究辅助",icon:"branch",description:"展开主题与关联，让研究思路形成清晰结构。"},
  {name:"标准编制",group:"研究辅助",icon:"standard",description:"辅助整理标准结构、编制内容与条款。"},
- {name:"专利分析",group:"研究辅助",icon:"chart",description:"辅助梳理专利信息与技术发展脉络。"}
+ {name:"专利编制",group:"研究辅助",icon:"file",description:"辅助梳理专利技术方案与申请材料，形成编制思路。"}
 ];
 const navigation = [
- {id:"home",file:"pages/home.html",label:"首页",icon:"home"},
+ {id:"home",file:"pages/home.html",label:"新对话",icon:"chat"},
+ {id:"center",file:"pages/center.html",label:"功能中心",icon:"grid"},
  {id:"qa",file:"pages/qa.html",label:"百舸问答",icon:"chat",children:["对话","智能问数"]},
  {id:"knowledge",file:"pages/knowledge.html",label:"知识库",icon:"book"},
  {id:"writing",file:"pages/writing.html",label:"百舸写作",icon:"pen"},
@@ -30,6 +31,45 @@ const navigation = [
  {id:"data-platform",file:"pages/data-platform.html",label:"数据平台",icon:"server",children:["数据标注平台","爬虫平台","数据中台"]}
 ];
 const knowledgeScopes = ["全部","部门知识库","行业知识库","个人知识库","企业知识库"];
+// Sample names for the selection prototype. No documents or retrieval service are connected.
+const knowledgeLibraries = [
+ {id:"enterprise-main",name:"企业知识库",scope:"企业知识库",description:"企业资料与日常知识"},
+ {id:"enterprise-writing",name:"写作素材",scope:"企业知识库",description:"常用写作材料与表达参考"},
+ {id:"enterprise-qa",name:"问答知识库",scope:"企业知识库",description:"常见问题与业务资料"},
+ {id:"industry-ship",name:"船舶行业资料",scope:"行业知识库",description:"行业研究与技术资料"},
+ {id:"industry-standard",name:"标准规范资料",scope:"行业知识库",description:"标准与规范参考资料"},
+ {id:"department-project",name:"部门项目资料",scope:"部门知识库",description:"部门项目与研究材料"},
+ {id:"department-research",name:"研究报告资料",scope:"部门知识库",description:"研究报告与专题材料"},
+ {id:"personal-notes",name:"我的研究笔记",scope:"个人知识库",description:"个人整理的阅读与研究笔记"},
+ {id:"personal-saved",name:"个人收藏资料",scope:"个人知识库",description:"个人收藏与整理的资料"}
+];
 const findNavItem = id => navigation.find(item=>item.id===id);
-window.BaigeData = Object.freeze({navigation,tools,knowledgeScopes,findNavItem});
+// Prototype permissions only. A denied parent also denies its children.
+const permissions = {
+ routes: {},
+ children: {
+  qa: {"智能问数": false},
+  frontier: {"智研通": false},
+  "smart-tools": {"标准编制": false}
+ }
+};
+const childNames = id => id === "smart-tools" ? tools.map(tool => tool.name) : (findNavItem(id)?.children || []);
+function canOpen(id, child = "") {
+ if (!findNavItem(id) || permissions.routes[id] === false) return false;
+ if (id === "home") return permissions.routes.qa !== false && permissions.children.qa?.["对话"] !== false;
+ const names = childNames(id);
+ if (child) return names.includes(child) && permissions.children[id]?.[child] !== false;
+ return names.length ? names.some(name => canOpen(id, name)) : true;
+}
+function accessSummary(id) {
+ const names = childNames(id);
+ const granted = names.filter(name => canOpen(id, name)).length;
+ return { total: names.length, granted,
+  label: !granted ? "暂未开通" : granted === names.length ? "全部已开通" : `已开通 ${granted}/${names.length}` };
+}
+function canUseKnowledge(id) {
+ return canOpen("knowledge") && knowledgeLibraries.some(library => library.id === id) && permissions.libraries?.[id] !== false;
+}
+window.BaigeData = Object.freeze({navigation,tools,knowledgeScopes,knowledgeLibraries,findNavItem});
+window.BaigePermissions = Object.freeze({canOpen,canUseKnowledge,childNames,summary:accessSummary});
 })();

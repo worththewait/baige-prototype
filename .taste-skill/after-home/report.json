@@ -1,15 +1,428 @@
 {
- "url": "http://127.0.0.1:4173/#home",
- "at": "2026-10-19T09:12:36.164Z",
+ "url": "pages/home.html",
+ "at": "2026-10-22T09:49:04.552Z",
  "allow": [],
  "viewports": [
+  {
+   "width": 1120,
+   "height": 700,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.29
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1120,
+     "h": 700
+    },
+    "page": {
+     "height": 700,
+     "screens": 1,
+     "words": 15,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "欢迎使用百舸问答",
+     "words": 1,
+     "chars": 8,
+     "lines": 1,
+     "size": 27,
+     "vw": 2.4,
+     "font": "-apple-system",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 1.45,
+     "top": 32,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "欢迎使用百舸问答",
+     "words": 1,
+     "lines": 1,
+     "size": 27,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "欢迎使用百舸问答",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 27,
+      "vw": 2.4,
+      "font": "-apple-system",
+      "weight": 500,
+      "tracking": -0.026,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 32,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      27
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 27,
+      "vw": 2.4,
+      "font": "-apple-system",
+      "text": "欢迎使用百舸问答"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.2,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#636873",
+       "share": 0.45
+      },
+      {
+       "color": "#25282f",
+       "share": 0.39
+      },
+      {
+       "color": "#414a5b",
+       "share": 0.16
+      }
+     ],
+     "button": {
+      "bg": "#eef1f6",
+      "hsl": {
+       "h": 218,
+       "s": 0.31,
+       "l": 0.95
+      },
+      "fg": "#25282f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 7,
+     "height": 35,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "通用问答"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "button.suggested-question 569px",
+      "button.suggested-question 569px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 73,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1120,
+     "h": 700
+    },
+    "pageH": 700,
+    "margins": {
+     "left": 32,
+     "right": 53
+    },
+    "sections": [
+     {
+      "sel": "div#conversationWelcome.conversation-welcome",
+      "tag": "div",
+      "top": 129,
+      "height": 195,
+      "words": 9,
+      "media": 0,
+      "middle": 56,
+      "heading": {
+       "text": "通用问答",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 52,
+      "right": 156,
+      "textLeft": 52,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "form#conversationForm.question-composer",
+      "tag": "form",
+      "top": 495,
+      "height": 159,
+      "words": 2,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 53,
+      "right": 53,
+      "textLeft": 86,
+      "textRight": 879,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "欢迎使用百舸问答",
+      "size": 27,
+      "top": 32,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 1
+     },
+     {
+      "x": 79,
+      "n": 1
+     },
+     {
+      "x": 704,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 3,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 0,
+     "y": 327,
+     "w": 1120,
+     "h": 140
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1120,
+     "h": 700
+    },
+    "dark": false,
+    "ground": "#ffffff",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 32,
+     "right": 53
+    },
+    "hero": {
+     "text": "欢迎使用百舸问答",
+     "words": 1,
+     "chars": 8,
+     "lines": 1,
+     "size": 27,
+     "vw": 2.4,
+     "font": "-apple-system",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 1.45,
+     "top": 32,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 3,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 3,
+     "radii": [
+      [
+       12,
+       2
+      ],
+      [
+       16,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 220,
+       "size": 36,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.3,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      21,
+      27
+     ]
+    },
+    "title": {
+     "text": "欢迎使用百舸问答",
+     "size": 27,
+     "top": 32
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
   {
    "width": 1440,
    "height": 900,
    "load": "load",
    "screens": 1,
    "filled": [
-    0.88
+    0.18
    ],
    "motion": {
     "elements": 0,
@@ -27,12 +440,12 @@
     "page": {
      "height": 900,
      "screens": 1,
-     "words": 49,
+     "words": 15,
      "img": 0,
      "video": 0,
      "canvas": 0,
-     "svg": 29,
-     "sections": 3,
+     "svg": 12,
+     "sections": 2,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -48,48 +461,48 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "你好，这里是百舸",
+     "text": "欢迎使用百舸问答",
      "words": 1,
      "chars": 8,
      "lines": 1,
-     "size": 28,
-     "vw": 1.9,
+     "size": 30,
+     "vw": 2.1,
      "font": "-apple-system",
-     "weight": 600,
+     "weight": 500,
      "tracking": -0.02,
-     "leading": 1.35,
-     "top": 100,
+     "leading": 1.45,
+     "top": 62,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
      "position": "left"
     },
     "h1": {
-     "text": "你好，这里是百舸",
+     "text": "欢迎使用百舸问答",
      "words": 1,
      "lines": 1,
-     "size": 28,
+     "size": 30,
      "font": "-apple-system"
     },
     "headings": [
      {
-      "text": "你好，这里是百舸",
+      "text": "欢迎使用百舸问答",
       "words": 1,
       "chars": 8,
       "lines": 1,
-      "size": 28,
-      "vw": 1.9,
+      "size": 30,
+      "vw": 2.1,
       "font": "-apple-system",
-      "weight": 600,
-      "tracking": -0.021,
-      "leading": 1.35,
+      "weight": 500,
+      "tracking": -0.023,
+      "leading": 1.45,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 100,
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 62,
       "tag": "h1",
       "kind": "heading"
      }
@@ -114,22 +527,20 @@
      "familyCount": 1,
      "sizes": [
       12,
+      13,
       14,
-      15,
       16,
-      18,
-      20,
-      28
+      30
      ],
-     "sizeCount": 7,
+     "sizeCount": 5,
      "notLoaded": [],
      "body": null,
      "measureChars": null,
      "max": {
-      "size": 28,
-      "vw": 1.9,
+      "size": 30,
+      "vw": 2.1,
       "font": "-apple-system",
-      "text": "你好，这里是百舸"
+      "text": "欢迎使用百舸问答"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -139,70 +550,56 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
-     "smallText": 1
+     "centerShare": 0.2,
+     "smallText": 2
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#f4f6f7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 200,
-      "s": 0.16,
-      "l": 0.96
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
-     "sectionBgs": [
-      {
-       "color": "#ffffff",
-       "top": 0,
-       "hsl": {
-        "h": 0,
-        "s": 0,
-        "l": 1
-       }
-      }
-     ],
+     "sectionBgs": [],
      "textColors": [
       {
-       "color": "#5e6872",
-       "share": 0.68
+       "color": "#636873",
+       "share": 0.45
       },
       {
-       "color": "#22282e",
-       "share": 0.31
+       "color": "#25282f",
+       "share": 0.39
       },
       {
-       "color": "#ffffff",
-       "share": 0.01
+       "color": "#414a5b",
+       "share": 0.16
       }
      ],
      "button": {
-      "bg": "#f7f8f9",
+      "bg": "#eef1f6",
       "hsl": {
-       "h": 210,
-       "s": 0.14,
-       "l": 0.97
+       "h": 218,
+       "s": 0.31,
+       "l": 0.95
       },
-      "fg": "#22282e"
+      "fg": "#25282f"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 5,
-     "radius": 8,
-     "height": 79,
+     "count": 1,
+     "inHero": 1,
+     "radius": 7,
+     "height": 35,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "首页",
-      "发送",
-      "全球鹰 前沿工具",
-      "智研通 前沿工具",
-      "智能工具 文档、写作与研究辅助"
+      "通用问答"
      ]
     },
     "surfaces": {
@@ -215,32 +612,25 @@
      "gradientText": 0,
      "hairlines": 2,
      "hairlineSamples": [
-      "aside#sidebar.sidebar 240px",
-      "header.topbar 1200px"
+      "button.suggested-question 585px",
+      "button.suggested-question 585px"
      ],
-     "outlinedBoxes": 4,
+     "outlinedBoxes": 1,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 5,
-     "boxRadius": 8,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
      "squareMedia": 0,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
-     "cardRows": [
-      {
-       "count": 3,
-       "iconTopped": true,
-       "rounded": true,
-       "top": 556
-      }
-     ]
+     "cardRows": []
     },
     "heroMedia": [],
     "nav": {
      "links": 0,
      "fixed": false,
-     "height": 684,
+     "height": 77,
      "floatingPill": false,
      "blur": false
     },
@@ -253,27 +643,27 @@
     },
     "pageH": 900,
     "margins": {
-     "left": 16,
-     "right": 50
+     "left": 170,
+     "right": 191
     },
     "sections": [
      {
-      "sel": "section.conversation",
-      "tag": "section",
-      "top": 201,
-      "height": 280,
-      "words": 3,
+      "sel": "div#conversationWelcome.conversation-welcome",
+      "tag": "div",
+      "top": 171,
+      "height": 215,
+      "words": 9,
       "media": 0,
-      "middle": 0,
+      "middle": 66,
       "heading": {
-       "text": "今天想研究什么？",
-       "size": 18,
+       "text": "通用问答",
+       "size": 16,
        "tag": "h2"
       },
-      "left": 318,
-      "right": 97,
-      "textLeft": 318,
-      "textRight": 142,
+      "left": 195,
+      "right": 307,
+      "textLeft": 195,
+      "textRight": 307,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -281,45 +671,18 @@
       "pinned": false
      },
      {
-      "sel": "section.home-section",
-      "tag": "section",
-      "top": 513,
-      "height": 196,
-      "words": 11,
+      "sel": "form#conversationForm.question-composer",
+      "tag": "form",
+      "top": 682,
+      "height": 163,
+      "words": 2,
       "media": 0,
-      "middle": 16,
-      "heading": {
-       "text": "从工作场景出发",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 290,
-      "right": 50,
-      "textLeft": 290,
-      "textRight": 50,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": false,
-      "pinned": false
-     },
-     {
-      "sel": "section.home-section",
-      "tag": "section",
-      "top": 741,
-      "height": 122,
-      "words": 7,
-      "media": 0,
-      "middle": 16,
-      "heading": {
-       "text": "研究与探索",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 290,
-      "right": 50,
-      "textLeft": 290,
-      "textRight": 238,
+      "middle": 0,
+      "heading": null,
+      "left": 191,
+      "right": 191,
+      "textLeft": 224,
+      "textRight": 1061,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -327,45 +690,46 @@
       "pinned": false
      }
     ],
-    "gaps": [],
+    "gaps": [
+     {
+      "top": 372,
+      "height": 328
+     }
+    ],
     "h1s": [
      {
-      "text": "你好，这里是百舸",
-      "size": 28,
-      "top": 100,
+      "text": "欢迎使用百舸问答",
+      "size": 30,
+      "top": 62,
       "firstScreen": true
      }
     ],
     "edgeText": [],
     "edges": [
      {
-      "x": 290,
-      "n": 3
-     },
-     {
-      "x": 315,
-      "n": 2
-     },
-     {
-      "x": 687,
+      "x": 170,
       "n": 1
      },
      {
-      "x": 1059,
+      "x": 222,
+      "n": 1
+     },
+     {
+      "x": 873,
       "n": 1
      }
     ],
-    "leftBlocks": 7,
+    "leftBlocks": 3,
     "bodySize": 16,
     "stage": false,
     "explains": false,
     "slivers": [],
-    "voidShare": 0.08,
+    "voidShare": 0.27,
     "voidBox": {
-     "x": 600,
-     "y": 120,
-     "w": 840,
-     "h": 120
+     "x": 0,
+     "y": 420,
+     "w": 1440,
+     "h": 240
     }
    },
    "app": {
@@ -374,32 +738,25 @@
      "h": 900
     },
     "dark": false,
-    "ground": "#f4f6f7",
-    "sidebar": {
-     "w": 240,
-     "tag": "aside",
-     "links": 22,
-     "share": 0.17
-    },
-    "topbar": {
-     "h": 64
-    },
+    "ground": "#ffffff",
+    "sidebar": null,
+    "topbar": null,
     "canvas": {
-     "left": 40,
-     "right": 40
+     "left": 170,
+     "right": 191
     },
     "hero": {
-     "text": "你好，这里是百舸",
+     "text": "欢迎使用百舸问答",
      "words": 1,
      "chars": 8,
      "lines": 1,
-     "size": 28,
-     "vw": 1.9,
+     "size": 30,
+     "vw": 2.1,
      "font": "-apple-system",
-     "weight": 600,
+     "weight": 500,
      "tracking": -0.02,
-     "leading": 1.35,
-     "top": 100,
+     "leading": 1.45,
+     "top": 62,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
@@ -407,37 +764,41 @@
     },
     "charts": 0,
     "layout": {
-     "panels": 1,
-     "firstScreen": 1,
+     "panels": 3,
+     "firstScreen": 3,
      "ragged": [],
      "voids": []
     },
     "tiles": 0,
     "panels": {
-     "count": 9,
+     "count": 3,
      "radii": [
       [
-       8,
-       8
+       12,
+       2
       ],
       [
-       0,
+       16,
        1
       ]
      ],
-     "heavyBorders": 1,
-     "borderSamples": [
-      "#bbc2c8 on #ffffff (1.8:1)"
-     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
      "heavyShadows": 0,
      "softShadows": 0,
      "shadowSamples": [],
      "glass": 0
     },
     "chips": {
-     "count": 0,
-     "hues": 0,
-     "samples": []
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 220,
+       "size": 36,
+       "radius": "50%"
+      }
+     ]
     },
     "numbers": {
      "cells": 0,
@@ -450,34 +811,34 @@
     "chartHues": 0,
     "placeholders": [],
     "type": {
-     "under13": 0.19,
+     "under13": 0.3,
      "tiny": 0,
      "tinySamples": [],
      "sizes": [
       12,
+      13,
       14,
       16,
-      18,
-      20,
-      28
+      21,
+      30
      ]
     },
     "title": {
-     "text": "你好，这里是百舸",
-     "size": 28,
-     "top": 100
+     "text": "欢迎使用百舸问答",
+     "size": 30,
+     "top": 62
     },
     "colourShare": 0
    },
    "consoleErrors": []
   },
   {
-   "width": 768,
-   "height": 1024,
+   "width": 1920,
+   "height": 1200,
    "load": "load",
    "screens": 1,
    "filled": [
-    1
+    0.14
    ],
    "motion": {
     "elements": 0,
@@ -489,18 +850,18 @@
    },
    "metrics": {
     "viewport": {
-     "w": 768,
-     "h": 1024
+     "w": 1920,
+     "h": 1200
     },
     "page": {
-     "height": 1024,
+     "height": 1200,
      "screens": 1,
-     "words": 28,
+     "words": 15,
      "img": 0,
      "video": 0,
      "canvas": 0,
-     "svg": 29,
-     "sections": 3,
+     "svg": 12,
+     "sections": 2,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -516,55 +877,33 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "你好，这里是百舸",
+     "text": "欢迎使用百舸问答",
      "words": 1,
      "chars": 8,
      "lines": 1,
-     "size": 28,
-     "vw": 3.6,
+     "size": 30,
+     "vw": 1.6,
      "font": "-apple-system",
-     "weight": 600,
+     "weight": 500,
      "tracking": -0.02,
-     "leading": 1.35,
-     "top": 84,
+     "leading": 1.45,
+     "top": 62,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
      "position": "left"
     },
     "h1": {
-     "text": "你好，这里是百舸",
+     "text": "欢迎使用百舸问答",
      "words": 1,
      "lines": 1,
-     "size": 28,
+     "size": 30,
      "font": "-apple-system"
     },
-    "headings": [
-     {
-      "text": "你好，这里是百舸",
-      "words": 1,
-      "chars": 8,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "-apple-system",
-      "weight": 600,
-      "tracking": -0.021,
-      "leading": 1.35,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.4,
-      "top": 84,
-      "tag": "h1",
-      "kind": "heading"
-     }
-    ],
+    "headings": [],
     "headingSummary": {
-     "count": 1,
-     "maxLines": 1,
+     "count": 0,
+     "maxLines": 0,
      "over2Lines": 0,
      "statements": 0,
      "centered": 0,
@@ -582,20 +921,20 @@
      "familyCount": 1,
      "sizes": [
       12,
+      13,
       14,
       16,
-      18,
-      28
+      30
      ],
      "sizeCount": 5,
      "notLoaded": [],
      "body": null,
      "measureChars": null,
      "max": {
-      "size": 28,
-      "vw": 3.6,
+      "size": 30,
+      "vw": 1.6,
       "font": "-apple-system",
-      "text": "你好，这里是百舸"
+      "text": "欢迎使用百舸问答"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -605,66 +944,56 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
-     "smallText": 0
+     "centerShare": 0.2,
+     "smallText": 2
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#f4f6f7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 200,
-      "s": 0.16,
-      "l": 0.96
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
-     "sectionBgs": [
-      {
-       "color": "#ffffff",
-       "top": 0,
-       "hsl": {
-        "h": 0,
-        "s": 0,
-        "l": 1
-       }
-      }
-     ],
+     "sectionBgs": [],
      "textColors": [
       {
-       "color": "#5e6872",
-       "share": 0.6
+       "color": "#636873",
+       "share": 0.45
       },
       {
-       "color": "#22282e",
+       "color": "#25282f",
        "share": 0.39
       },
       {
-       "color": "#ffffff",
-       "share": 0.01
+       "color": "#414a5b",
+       "share": 0.16
       }
      ],
      "button": {
-      "bg": "#f7f8f9",
+      "bg": "#eef1f6",
       "hsl": {
-       "h": 210,
-       "s": 0.14,
-       "l": 0.97
+       "h": 218,
+       "s": 0.31,
+       "l": 0.95
       },
-      "fg": "#22282e"
+      "fg": "#25282f"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
-     "radius": 8,
-     "height": 79,
+     "count": 1,
+     "inHero": 1,
+     "radius": 7,
+     "height": 35,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "发送"
+      "通用问答"
      ]
     },
     "surfaces": {
@@ -675,15 +1004,16 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
+     "hairlines": 2,
      "hairlineSamples": [
-      "header.topbar 768px"
+      "button.suggested-question 585px",
+      "button.suggested-question 585px"
      ],
-     "outlinedBoxes": 4,
+     "outlinedBoxes": 1,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 5,
-     "boxRadius": 8,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
      "squareMedia": 0,
      "roundedMedia": 0,
      "mediaRadius": 0,
@@ -693,8 +1023,8 @@
     "heroMedia": [],
     "nav": {
      "links": 0,
-     "fixed": true,
-     "height": 1024,
+     "fixed": false,
+     "height": 77,
      "floatingPill": false,
      "blur": false
     },
@@ -702,140 +1032,82 @@
    },
    "layout": {
     "viewport": {
-     "w": 768,
-     "h": 1024
+     "w": 1920,
+     "h": 1200
     },
-    "pageH": 1024,
+    "pageH": 1200,
     "margins": {
-     "left": 28,
-     "right": 28
+     "left": 410,
+     "right": 431
     },
-    "sections": [
+    "sections": [],
+    "gaps": [
      {
-      "sel": "section.conversation",
-      "tag": "section",
-      "top": 185,
-      "height": 280,
-      "words": 3,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "今天想研究什么？",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 56,
-      "right": 75,
-      "textLeft": 56,
-      "textRight": 120,
-      "fullBleed": false,
-      "footer": false,
-      "hero": true,
-      "continues": false,
-      "pinned": false
-     },
-     {
-      "sel": "section.home-section",
-      "tag": "section",
-      "top": 497,
-      "height": 485,
-      "words": 11,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "从工作场景出发",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 28,
-      "right": 28,
-      "textLeft": 28,
-      "textRight": 28,
-      "fullBleed": false,
-      "footer": false,
-      "hero": true,
-      "continues": false,
-      "pinned": false
-     },
-     {
-      "sel": "section.home-section",
-      "tag": "section",
-      "top": 1014,
-      "height": 312,
-      "words": 7,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "研究与探索",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 28,
-      "right": 28,
-      "textLeft": 28,
-      "textRight": 572,
-      "fullBleed": false,
-      "footer": true,
-      "hero": false,
-      "continues": false,
-      "pinned": false
+      "top": 372,
+      "height": 628
      }
     ],
-    "gaps": [],
     "h1s": [
      {
-      "text": "你好，这里是百舸",
-      "size": 28,
-      "top": 84,
+      "text": "欢迎使用百舸问答",
+      "size": 30,
+      "top": 62,
       "firstScreen": true
      }
     ],
     "edgeText": [],
     "edges": [
      {
-      "x": 49,
-      "n": 4
+      "x": 410,
+      "n": 1
      },
      {
-      "x": 28,
-      "n": 3
+      "x": 462,
+      "n": 1
+     },
+     {
+      "x": 1113,
+      "n": 1
      }
     ],
-    "leftBlocks": 7,
+    "leftBlocks": 3,
     "bodySize": 16,
     "stage": false,
     "explains": false,
     "slivers": [],
-    "voidShare": 0,
-    "voidBox": null
+    "voidShare": 0.47,
+    "voidBox": {
+     "x": 0,
+     "y": 400,
+     "w": 1920,
+     "h": 560
+    }
    },
    "app": {
     "viewport": {
-     "w": 768,
-     "h": 1024
+     "w": 1920,
+     "h": 1200
     },
     "dark": false,
-    "ground": "#f4f6f7",
+    "ground": "#ffffff",
     "sidebar": null,
-    "topbar": {
-     "h": 56
-    },
+    "topbar": null,
     "canvas": {
-     "left": 28,
-     "right": 28
+     "left": 410,
+     "right": 431
     },
     "hero": {
-     "text": "你好，这里是百舸",
+     "text": "欢迎使用百舸问答",
      "words": 1,
      "chars": 8,
      "lines": 1,
-     "size": 28,
-     "vw": 3.6,
+     "size": 30,
+     "vw": 1.6,
      "font": "-apple-system",
-     "weight": 600,
+     "weight": 500,
      "tracking": -0.02,
-     "leading": 1.35,
-     "top": 84,
+     "leading": 1.45,
+     "top": 62,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
@@ -843,471 +1115,41 @@
     },
     "charts": 0,
     "layout": {
-     "panels": 7,
-     "firstScreen": 4,
-     "ragged": [],
-     "voids": []
-    },
-    "tiles": 0,
-    "panels": {
-     "count": 8,
-     "radii": [
-      [
-       8,
-       8
-      ]
-     ],
-     "heavyBorders": 1,
-     "borderSamples": [
-      "#bbc2c8 on #ffffff (1.8:1)"
-     ],
-     "heavyShadows": 0,
-     "softShadows": 0,
-     "shadowSamples": [],
-     "glass": 0
-    },
-    "chips": {
-     "count": 0,
-     "hues": 0,
-     "samples": []
-    },
-    "numbers": {
-     "cells": 0,
-     "leftAligned": 0,
-     "figures": 0,
-     "tabularShare": null,
-     "kpiMax": null
-    },
-    "rows": null,
-    "chartHues": 0,
-    "placeholders": [],
-    "type": {
-     "under13": 0.18,
-     "tiny": 0,
-     "tinySamples": [],
-     "sizes": [
-      12,
-      14,
-      16,
-      18,
-      28
-     ]
-    },
-    "title": {
-     "text": "你好，这里是百舸",
-     "size": 28,
-     "top": 84
-    },
-    "colourShare": 0
-   },
-   "consoleErrors": []
-  },
-  {
-   "width": 390,
-   "height": 844,
-   "load": "load",
-   "screens": 1,
-   "filled": [
-    1
-   ],
-   "motion": {
-    "elements": 0,
-    "css": 0,
-    "transitions": 0,
-    "scripted": 0,
-    "videos": 0,
-    "playingVideos": 0
-   },
-   "metrics": {
-    "viewport": {
-     "w": 390,
-     "h": 844
-    },
-    "page": {
-     "height": 844,
-     "screens": 1,
-     "words": 27,
-     "img": 0,
-     "video": 0,
-     "canvas": 0,
-     "svg": 29,
-     "sections": 3,
-     "horizontalOverflow": 0,
-     "overflowCulprits": [],
-     "uiFragments": 0,
-     "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
-     "uiPictures": 0,
-     "pictureSamples": [],
-     "blendText": 0,
-     "sideScrollers": 0,
-     "brokenImages": [],
-     "emoji": [],
-     "videosNoPoster": 0
-    },
-    "hero": {
-     "text": "你好，这里是百舸",
-     "words": 1,
-     "chars": 8,
-     "lines": 1,
-     "size": 24,
-     "vw": 6.2,
-     "font": "-apple-system",
-     "weight": 600,
-     "tracking": -0.02,
-     "leading": 1.35,
-     "top": 80,
-     "tag": "h1",
-     "kind": "heading",
-     "align": "left",
-     "position": "left"
-    },
-    "h1": {
-     "text": "你好，这里是百舸",
-     "words": 1,
-     "lines": 1,
-     "size": 24,
-     "font": "-apple-system"
-    },
-    "headings": [
-     {
-      "text": "你好，这里是百舸",
-      "words": 1,
-      "chars": 8,
-      "lines": 1,
-      "size": 24,
-      "vw": 6.2,
-      "font": "-apple-system",
-      "weight": 600,
-      "tracking": -0.025,
-      "leading": 1.35,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.79,
-      "top": 80,
-      "tag": "h1",
-      "kind": "heading"
-     }
-    ],
-    "headingSummary": {
-     "count": 1,
-     "maxLines": 1,
-     "over2Lines": 0,
-     "statements": 0,
-     "centered": 0,
-     "medianWords": null,
-     "mixedFontHeadings": 0
-    },
-    "type": {
-     "families": [
-      {
-       "family": "-apple-system",
-       "share": 1,
-       "mono": false
-      }
-     ],
-     "familyCount": 1,
-     "sizes": [
-      12,
-      14,
-      16,
-      18,
-      24
-     ],
-     "sizeCount": 5,
-     "notLoaded": [],
-     "body": null,
-     "measureChars": null,
-     "max": {
-      "size": 24,
-      "vw": 6.2,
-      "font": "-apple-system",
-      "text": "你好，这里是百舸"
-     },
-     "monoShare": 0,
-     "monoProseShare": 0,
-     "monoFamilies": [],
-     "monoSamples": [],
-     "microLabels": 0,
-     "microLabelShare": 0,
-     "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.01,
-     "smallText": 0
-    },
-    "eyebrows": [],
-    "numbered": [],
-    "color": {
-     "bodyBg": "#f4f6f7",
-     "bodyBgHsl": {
-      "h": 200,
-      "s": 0.16,
-      "l": 0.96
-     },
-     "dark": false,
-     "sectionBgs": [
-      {
-       "color": "#ffffff",
-       "top": 0,
-       "hsl": {
-        "h": 0,
-        "s": 0,
-        "l": 1
-       }
-      }
-     ],
-     "textColors": [
-      {
-       "color": "#5e6872",
-       "share": 0.59
-      },
-      {
-       "color": "#22282e",
-       "share": 0.4
-      },
-      {
-       "color": "#ffffff",
-       "share": 0.01
-      }
-     ],
-     "button": {
-      "bg": "#f7f8f9",
-      "hsl": {
-       "h": 210,
-       "s": 0.14,
-       "l": 0.97
-      },
-      "fg": "#22282e"
-     },
-     "lowContrast": []
-    },
-    "buttons": {
-     "count": 5,
-     "inHero": 2,
-     "radius": 8,
-     "height": 79,
-     "withShadow": 0,
-     "withGradient": 0,
-     "mono": 0,
-     "upper": 0,
-     "heroLabels": [
-      "发送"
-     ]
-    },
-    "surfaces": {
-     "shadowStatic": 0,
-     "shadowOverlay": 0,
-     "shadowSamples": [],
-     "gradients": 0,
-     "scrims": 0,
-     "gradientSamples": [],
-     "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.topbar 390px"
-     ],
-     "outlinedBoxes": 4,
-     "dashed": 0,
-     "blurred": 0,
-     "roundedBoxes": 5,
-     "boxRadius": 8,
-     "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
-     "textShadow": 0,
-     "cardRows": [
-      {
-       "count": 3,
-       "iconTopped": true,
-       "rounded": true,
-       "top": 499
-      }
-     ]
-    },
-    "heroMedia": [],
-    "nav": {
-     "links": 0,
-     "fixed": true,
-     "height": 844,
-     "floatingPill": false,
-     "blur": false
-    },
-    "fontsLoaded": []
-   },
-   "layout": {
-    "viewport": {
-     "w": 390,
-     "h": 844
-    },
-    "pageH": 844,
-    "margins": {
-     "left": 20,
-     "right": 20
-    },
-    "sections": [
-     {
-      "sel": "section.conversation",
-      "tag": "section",
-      "top": 167,
-      "height": 261,
-      "words": 3,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "今天想研究什么？",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 40,
-      "right": 55,
-      "textLeft": 40,
-      "textRight": 100,
-      "fullBleed": false,
-      "footer": false,
-      "hero": true,
-      "continues": false,
-      "pinned": false
-     },
-     {
-      "sel": "section.home-section",
-      "tag": "section",
-      "top": 456,
-      "height": 485,
-      "words": 11,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "从工作场景出发",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 20,
-      "right": 20,
-      "textLeft": 20,
-      "textRight": 20,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": false,
-      "pinned": false
-     },
-     {
-      "sel": "section.home-section",
-      "tag": "section",
-      "top": 970,
-      "height": 312,
-      "words": 7,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "研究与探索",
-       "size": 18,
-       "tag": "h2"
-      },
-      "left": 20,
-      "right": 20,
-      "textLeft": 20,
-      "textRight": 202,
-      "fullBleed": false,
-      "footer": true,
-      "hero": false,
-      "continues": false,
-      "pinned": false
-     }
-    ],
-    "gaps": [],
-    "h1s": [
-     {
-      "text": "你好，这里是百舸",
-      "size": 24,
-      "top": 80,
-      "firstScreen": true
-     }
-    ],
-    "edgeText": [],
-    "edges": [
-     {
-      "x": 40,
-      "n": 4
-     },
-     {
-      "x": 20,
-      "n": 3
-     }
-    ],
-    "leftBlocks": 7,
-    "bodySize": 16,
-    "stage": false,
-    "explains": false,
-    "slivers": [],
-    "voidShare": 0,
-    "voidBox": null
-   },
-   "app": {
-    "viewport": {
-     "w": 390,
-     "h": 844
-    },
-    "dark": false,
-    "ground": "#f4f6f7",
-    "sidebar": null,
-    "topbar": {
-     "h": 56
-    },
-    "canvas": {
-     "left": 16,
-     "right": 20
-    },
-    "hero": {
-     "text": "你好，这里是百舸",
-     "words": 1,
-     "chars": 8,
-     "lines": 1,
-     "size": 24,
-     "vw": 6.2,
-     "font": "-apple-system",
-     "weight": 600,
-     "tracking": -0.02,
-     "leading": 1.35,
-     "top": 80,
-     "tag": "h1",
-     "kind": "heading",
-     "align": "left",
-     "position": "left"
-    },
-    "charts": 0,
-    "layout": {
-     "panels": 7,
+     "panels": 3,
      "firstScreen": 3,
      "ragged": [],
      "voids": []
     },
     "tiles": 0,
     "panels": {
-     "count": 8,
+     "count": 3,
      "radii": [
       [
-       8,
-       8
+       12,
+       2
+      ],
+      [
+       16,
+       1
       ]
      ],
-     "heavyBorders": 1,
-     "borderSamples": [
-      "#bbc2c8 on #ffffff (1.8:1)"
-     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
      "heavyShadows": 0,
      "softShadows": 0,
      "shadowSamples": [],
      "glass": 0
     },
     "chips": {
-     "count": 0,
-     "hues": 0,
-     "samples": []
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 220,
+       "size": 36,
+       "radius": "50%"
+      }
+     ]
     },
     "numbers": {
      "cells": 0,
@@ -1320,29 +1162,54 @@
     "chartHues": 0,
     "placeholders": [],
     "type": {
-     "under13": 0.16,
+     "under13": 0.3,
      "tiny": 0,
      "tinySamples": [],
      "sizes": [
       12,
+      13,
       14,
       16,
-      18,
-      24
+      21,
+      30
      ]
     },
     "title": {
-     "text": "你好，这里是百舸",
-     "size": 24,
-     "top": 80
+     "text": "欢迎使用百舸问答",
+     "size": 30,
+     "top": 62
     },
     "colourShare": 0
    },
    "consoleErrors": []
   }
  ],
- "findings": [],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 1920,
+   "message": "A 628px stretch at 372px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1920,
+   "message": "47% of the first screen is one empty block (1920×560px at 0,400).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  }
+ ],
  "images": [
+  {
+   "viewport": "desktop",
+   "width": 1120,
+   "fold": "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/desktop-fold.jpg",
+   "pages": [
+    "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
   {
    "viewport": "desktop",
    "width": 1440,
@@ -1353,20 +1220,11 @@
    "film": []
   },
   {
-   "viewport": "tablet",
-   "width": 768,
-   "fold": "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/tablet-fold.jpg",
+   "viewport": "desktop",
+   "width": 1920,
+   "fold": "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/desktop-fold.jpg",
    "pages": [
-    "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/tablet-page-01.jpg"
-   ],
-   "film": []
-  },
-  {
-   "viewport": "mobile",
-   "width": 390,
-   "fold": "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/mobile-fold.jpg",
-   "pages": [
-    "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/mobile-page-01.jpg"
+    "/Volumes/Lenovo/船舶/原型/.taste-skill/after-home/desktop-page-01.jpg"
    ],
    "film": []
   }

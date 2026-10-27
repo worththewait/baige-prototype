@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工具与平台 · 百舸数智平台</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../wb.css" />
+</head>
+<body class="module-page" data-page="discover-tools">
+  <main class="module-main">
+    <div class="content-scroll" id="contentScroll">
+      <div class="content-inner wb-discover" id="content">
+        <div class="wb-discover-head">
+          <div>
+            <h1 id="discoverTitle">工具与平台</h1>
+            <p id="discoverDesc"></p>
+          </div>
+          <span class="wb-discover-count" id="discoverCount"></span>
+        </div>
+        <div class="wb-discover-tabs">
+          <div class="wb-segmented" id="discoverTabs" role="tablist" aria-label="分类"></div>
+        </div>
+        <div class="wb-grid" id="discoverGrid"></div>
+      </div>
+    </div>
+  </main>
+  <dialog class="home-access-dialog" id="homeAccessDialog" aria-labelledby="homeAccessTitle" aria-describedby="homeAccessDescription">
+    <h2 id="homeAccessTitle">暂无该功能权限</h2>
+    <p id="homeAccessDescription"></p>
+    <p class="home-access-feedback" id="homeAccessFeedback" role="status"></p>
+    <div class="home-access-actions">
+      <button class="home-access-dismiss" type="button" id="closeHomeAccess" autofocus>关闭</button>
+      <button class="primary-button" type="button" id="applyHomeAccess">申请权限</button>
+    </div>
+  </dialog>
+  <script src="../src/data.js"></script>
+  <script src="../src/ui.js"></script>
+  <script src="../src/page-bridge.js"></script>
+  <script src="../src/home-access.js"></script>
+  <script src="../src/discovery.js"></script>
+  <script src="../src/pages/discover.js"></script>
+</body>
+</html>

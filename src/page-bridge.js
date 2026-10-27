@@ -5,9 +5,11 @@
   const { findNavItem, tools } = window.BaigeData;
   let activate = () => {};
   let deactivate = () => {};
+  let reset = () => {};
 
   function validChild(id, child) {
     if (typeof child !== "string") return "";
+    if (id === "center") return ["knowledge", "tools"].includes(child) ? child : "";
     const allowed = id === "smart-tools" ? tools.some((tool) => tool.name === child) : findNavItem(id)?.children?.includes(child);
     return allowed ? child : "";
   }
@@ -21,14 +23,14 @@
     activate({ child, focusSearch });
   }
 
-  function navigate(id, child = "", { focusSearch = false } = {}) {
+  function navigate(id, child = "", { focusSearch = false, newConversation = false } = {}) {
     if (!findNavItem(id)) return;
     child = validChild(id, child);
     // Tool-tab closing needs synchronous activation of its neighbouring tab.
-    if (id === pageId) show(child, focusSearch);
     if (embedded) {
-      window.parent.postMessage({ type: "baige:navigate", pageId, id, child, focusSearch }, "*");
+      window.parent.postMessage({ type: "baige:navigate", pageId, id, child, focusSearch, newConversation }, "*");
     } else if (id === pageId) {
+      show(child, focusSearch);
       const hash = child ? `#${encodeURIComponent(child)}` : "";
       if (location.hash !== hash) location.hash = hash;
     } else {
@@ -42,6 +44,25 @@
     if (!message || message.pageId !== pageId) return;
     if (message.type === "baige:activate") show(message.child, message.focusSearch === true);
     else if (message.type === "baige:deactivate") deactivate();
+    else if (message.type === "baige:reset") reset();
+    else if (message.type === "baige:workspace" && !["home", "center"].includes(pageId)) {
+      const header = document.querySelector(".page-header");
+      if (!header) return;
+      let button = header.querySelector("[data-pin-current]");
+      if (!button && message.available) {
+        button = document.createElement("button");
+        button.type = "button"; button.className = "secondary-button page-pin-action";
+        button.dataset.pinCurrent = "";
+        button.addEventListener("click", () => window.parent.postMessage({ type: "baige:pin", pageId }, "*"));
+        header.append(button);
+      }
+      if (button) {
+        button.hidden = !message.available;
+        button.setAttribute("aria-pressed", String(message.pinned === true));
+        button.innerHTML = `${window.BaigeUI.icon("pin")}<span>${message.pinned ? "已固定" : "固定到工作区"}</span>`;
+        button.title = message.pinned ? "取消固定" : "下次打开时保留该功能入口";
+      }
+    }
   });
   window.addEventListener("hashchange", () => { if (!embedded) show(readChild()); });
   document.addEventListener("click", (event) => {
@@ -50,13 +71,14 @@
   });
   document.addEventListener("keydown", (event) => {
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
-      event.preventDefault(); navigate("smart-tools", "", { focusSearch: true });
+      event.preventDefault(); navigate("center", "", { focusSearch: true });
     }
   });
   window.BaigeUI.hydrate();
   window.BaigePage = Object.freeze({
     pageId, navigate,
     onDeactivate(callback) { deactivate = callback; },
+    onReset(callback) { reset = callback; },
     onActivate(callback) {
       activate = callback;
       show(readChild());

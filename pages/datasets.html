@@ -5,19 +5,188 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>高质量数据集 · 百舸数智平台</title>
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../workspace.css" />
 </head>
 <body class="module-page" data-page="datasets">
   <main class="module-main">
     <div class="content-scroll" id="contentScroll">
       <div class="content-inner datasets-page" id="content">
-<div class="page-header"><div><h1 id="pageTitle">高质量数据集</h1><p id="pageDescription">相关能力将接入百舸数智工作空间。</p></div></div>
-<section class="integration-panel"><div class="empty-state"><span data-icon="layers" aria-hidden="true"></span><h2>正在集成</h2><p>相关内容接入后，将在这里呈现。</p></div></section>
+
+        <!-- 页面操作按钮由 page-bridge 注入；保持在列表与详情视图上方。 -->
+        <div class="page-header dataset-page-actions"></div>
+
+        <div id="datasetListView">
+          <section class="dataset-hero" aria-labelledby="datasetHeroTitle">
+            <div class="dataset-hero-content">
+              <h1 id="datasetHeroTitle">百舸高质量数据集</h1>
+              <p>本船舶行业高质量数据集，是面向全球航运产业智能化、绿色化升级需求打造的全链条、多维度数据资源体系，旨在破解行业数据碎片化、标准不统一、价值挖掘不足等痛点，为船舶行业数智化转型筑牢数据根基，推动产业向安全、高效、智能、绿色方向高质量发展。</p>
+            </div>
+          </section>
+
+          <section class="dataset-resource" aria-labelledby="datasetResourceTitle">
+            <div class="dataset-resource-inner">
+              <h2 id="datasetResourceTitle" class="sr-only">数据资源概况</h2>
+              <div class="dataset-rich-content">
+                <p>中国船舶集团有限公司综合技术经济研究院始终将数据视为驱动发展的核心要素，凭借六十余载的专业积淀、系统采集与规范治理，构建起覆盖船海领域全链条、多维度的高质量数据资源体系。</p>
+                <p>我院数据资源规模大、种类全，累计汇集“文、数、图、影、音”各类数据总量超2PB，涵盖船海产业数据、船舶行业质量数据、科技成果数据、科技文献数据、标准数据、文化传媒数据、教育培训数据、试验测试数据等8大核心领域、30余个专业方向，构建完成体系完整、内容全面、迭代及时的专业化数据集矩阵，全方位覆盖船海产业发展的关键环节，满足多领域、多场景的数据需求。</p>
+                <p>我院积极参与重点数据集标准制定，相关数据集建设成果入选首批央企人工智能行业高质量数据集优秀建设成果、高质量数据集典型案例，并被纳入国家数据局先行先试名单。</p>
+                <p>我院高质量数据集均经过严格的规范治理、专业标注与质量审核，确保数据的真实性、完整性、权威性与适配性。</p>
+                <p>我院致力于向政府机构、科研院所、船舶企业及行业组织提供精准、高效的数据服务，助力技术攻关、产品创新、规划制定与人才培养等活动。</p>
+              </div>
+              <dl class="dataset-resource-stats">
+                <div class="dataset-resource-stat"><dt>数据总量</dt><dd>2048<span>TB</span></dd></div>
+                <div class="dataset-resource-stat"><dt>核心领域数量</dt><dd>8<span>个</span></dd></div>
+                <div class="dataset-resource-stat"><dt>专业方向数量</dt><dd>30<span>+</span></dd></div>
+              </dl>
+            </div>
+          </section>
+
+          <section class="dataset-core" aria-labelledby="datasetCoreTitle">
+            <div class="dataset-core-inner">
+              <div class="dataset-core-header">
+                <h2 id="datasetCoreTitle">八大核心数据集</h2>
+                <p class="dataset-core-subtitle">8 个数据集 · 30 余个专业方向</p>
+              </div>
+              <div class="dataset-core-grid">
+                <a class="dataset-core-card" href="#dataset/船海产业数据集" data-dataset="船海产业数据集" aria-label="查看船海产业数据集详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/01-ship.png" width="48" height="48" alt="" />
+                  <h3>船海产业数据集</h3>
+                  <p>覆盖“市场—船舶—港口—航线—产业”全链条的高质量数据。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶领域标准数据集" data-dataset="船舶领域标准数据集" aria-label="查看船舶领域标准数据集详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/02-standard.png" width="48" height="48" alt="" />
+                  <h3>船舶领域标准数据集</h3>
+                  <p>综合船舶标准化研究中心打造的高质量专业数据集，全面整合各级各类船舶相关标准数据、标准化相关文档，涵盖船舶行业全领域；经规范运维与标准化处理，数据完整性、时效性强，为船舶行业发展提供标准支撑。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶行业质量数据集" data-dataset="船舶行业质量数据集" aria-label="查看船舶行业质量数据集详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/03-quality.png" width="48" height="48" alt="" />
+                  <h3>船舶行业质量数据集</h3>
+                  <p>综合质量与可靠性中心整合质量指标、质量问题与异常、供应商资质、船舶产品运行及维护等核心数据，覆盖船舶行业质量可靠性领域，经领域专家严格校验与人工标注，数据质量高、维度全。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶行业科技成果数据" data-dataset="船舶行业科技成果数据" aria-label="查看船舶行业科技成果数据详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/04-achievement.png" width="48" height="48" alt="" />
+                  <h3>船舶行业科技成果数据</h3>
+                  <p>综合知识产权与成果管理研究中心整合专利技术、专利诉讼、科技成果、科技奖励、专利申请、专利转化等核心数据，覆盖船舶领域全技术方向；经规范检验、治理、共享与追溯，更新及时，精准呈现船舶行业科技成果及专利全貌。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶行业科技文献数据" data-dataset="船舶行业科技文献数据" aria-label="查看船舶行业科技文献数据详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/05-literature.png" width="48" height="48" alt="" />
+                  <h3>船舶行业科技文献数据</h3>
+                  <p>聚焦船舶工业全产业链知识体系，汇集图书、期刊论文、行业研究报告等文献资源，涵盖船舶设计、先进制造、绿色能源、智能航运等领域；经OCR识别、元数据清洗与领域本体标注，形成结构化文献资源池，覆盖基础理论到工程实践的多层级内容。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶行业文化传播数据" data-dataset="船舶行业文化传播数据" aria-label="查看船舶行业文化传播数据详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/06-culture.png" width="48" height="48" alt="" />
+                  <h3>船舶行业文化传播数据</h3>
+                  <p>聚焦行业形象与叙事资源，系统收录主流媒体船舶新闻报道、船厂实景图片、船舶产业相关视频及典型船舶三维模型，覆盖船级、LNG船、智能船舶等热点领域；经专业分类、元数据标注及格式标准化，形成图文音视频多维一体的文化素材库。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶行业教育培训数据" data-dataset="船舶行业教育培训数据" aria-label="查看船舶行业教育培训数据详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/07-education.png" width="48" height="48" alt="" />
+                  <h3>船舶行业教育培训数据</h3>
+                  <p>整合船舶行业各类培训相关数据，涵盖培训课件、题库习题、培训视频、考核记录等核心内容，覆盖从业人员岗前培训、技能提升、岗位考核等需求。</p>
+                </a>
+                <a class="dataset-core-card" href="#dataset/船舶行业试验测试数据" data-dataset="船舶行业试验测试数据" aria-label="查看船舶行业试验测试数据详情">
+                  <img class="dataset-core-icon" src="../assets/datasets/08-testing.png" width="48" height="48" alt="" />
+                  <h3>船舶行业试验测试数据</h3>
+                  <p>覆盖船舶行业软件测试、可靠性测试等核心数据，涵盖船舶相关软件功能、性能测试及设备可靠性验证，来源均为正规试验检测流程，经检验审核，确保数据真实、精准、完整。</p>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <p class="dataset-source">内容与图片素材来源：百舸·船舶行业数智服务平台（cai.zkj.com）公开页面，已保存为本地素材以支持离线查看。</p>
+        </div>
+
+        <div id="datasetDetailView" class="dataset-detail" hidden>
+          <a class="dataset-back" href="#" data-dataset-back><span data-icon="back" aria-hidden="true"></span>返回数据集</a>
+          <div class="ds-detail-head">
+            <img id="datasetDetailIcon" class="ds-detail-icon" src="../assets/datasets/01-ship.png" width="64" height="64" alt="" />
+            <div class="ds-detail-copy">
+              <p class="ds-detail-crumb">高质量数据集 / <span id="datasetDetailCrumb">船海产业数据集</span></p>
+              <h1 id="datasetDetailTitle">船海产业数据集</h1>
+              <p id="datasetDetailSummary">覆盖“市场—船舶—港口—航线—产业”全链条的高质量数据，呈现船海产业运行的整体脉络。</p>
+              <p class="ds-detail-updated">更新日期：<span id="datasetDetailUpdated">2026-09-28</span></p>
+            </div>
+          </div>
+
+          <div id="datasetDetailContent" class="ds-detail-content"></div>
+
+          <section class="ds-detail-apply" aria-labelledby="datasetApplyHeading">
+            <div>
+              <h2 id="datasetApplyHeading">申请使用</h2>
+              <p>提交申请后由管理员审批，审批通过后可获取该数据集的使用权限。</p>
+            </div>
+            <button class="primary-button ds-apply-button" type="button" id="openDatasetApply">申请使用</button>
+          </section>
+
+          <p class="dataset-source">内容与图片素材来源：百舸·船舶行业数智服务平台（cai.zkj.com）公开页面。</p>
+        </div>
       </div>
     </div>
   </main>
+
+  <!-- 数据集申请弹窗：字段与顺序按门户申请表单复刻，提交仅作原型演示。 -->
+  <dialog id="datasetApplyDialog" class="dataset-apply-dialog" aria-labelledby="datasetApplyTitle">
+    <div class="dataset-apply-head">
+      <h2 id="datasetApplyTitle">数据集申请</h2>
+      <button class="apply-close" type="button" id="closeDatasetApply" aria-label="关闭">
+        <span data-icon="close" aria-hidden="true"></span>
+      </button>
+    </div>
+    <form id="datasetApplyForm" class="dataset-apply-form" novalidate>
+      <p id="datasetApplyDataset" class="sr-only"></p>
+      <div class="dataset-apply-body">
+        <label class="apply-field" for="applyReason">
+          <span class="apply-label">申请事由 <span class="apply-required">*</span></span>
+          <textarea id="applyReason" rows="3" placeholder="请说明申请该数据集的具体用途与背景" aria-required="true"></textarea>
+        </label>
+
+        <fieldset class="apply-scopes" id="applyScopes">
+          <legend class="apply-label">使用范围 <span class="apply-required">*</span> <small>可多选</small></legend>
+          <div class="apply-chips">
+            <label class="apply-chip"><input type="checkbox" name="scopes" value="科研分析" /><span>科研分析</span></label>
+            <label class="apply-chip"><input type="checkbox" name="scopes" value="算法训练" /><span>算法训练</span></label>
+            <label class="apply-chip"><input type="checkbox" name="scopes" value="产品开发" /><span>产品开发</span></label>
+            <label class="apply-chip"><input type="checkbox" name="scopes" value="商业应用" /><span>商业应用</span></label>
+          </div>
+          <input class="apply-other-scope" id="applyOtherScope" type="text" placeholder="其他范围请在此补充说明（选填）" />
+        </fieldset>
+
+        <div class="apply-field">
+          <span class="apply-label">使用期限 <span class="apply-required">*</span></span>
+          <div class="apply-date-range">
+            <input id="applyStart" type="date" aria-label="使用开始日期" aria-required="true" />
+            <span>至</span>
+            <input id="applyEnd" type="date" aria-label="使用结束日期" aria-required="true" />
+          </div>
+        </div>
+
+        <fieldset class="apply-applicant">
+          <legend class="apply-label">申请人信息 <span class="apply-required">*</span></legend>
+          <div class="apply-two-col">
+            <input id="applyName" type="text" placeholder="姓名" aria-label="姓名" aria-required="true" autocomplete="name" />
+            <input id="applyUnit" type="text" placeholder="单位" aria-label="单位" aria-required="true" autocomplete="organization" />
+          </div>
+          <input id="applyContact" type="text" placeholder="联系方式（手机号 / 邮箱）" aria-label="联系方式（手机号 / 邮箱）" aria-required="true" autocomplete="email" />
+        </fieldset>
+
+        <p id="applyFeedback" class="apply-feedback" role="status"></p>
+      </div>
+      <div class="dataset-apply-footer">
+        <button class="secondary-button apply-cancel" type="button" id="cancelDatasetApply">取消</button>
+        <button class="primary-button apply-submit" type="submit" id="submitDatasetApply">提交申请</button>
+      </div>
+    </form>
+    <div id="datasetApplySuccess" class="dataset-apply-success" hidden>
+      <span class="apply-success-icon" data-icon="check" aria-hidden="true"></span>
+      <h3 id="datasetApplySuccessTitle" tabindex="-1">申请已提交</h3>
+      <p>原型演示：本次申请未发送到服务端，正式接入后将进入审批流程。</p>
+      <button class="primary-button" type="button" id="finishDatasetApply">关闭</button>
+    </div>
+  </dialog>
+
   <script src="../src/data.js"></script>
   <script src="../src/ui.js"></script>
   <script src="../src/page-bridge.js"></script>
-  <script src="../src/pages/placeholder.js"></script>
+  <script src="../src/pages/datasets-data.js"></script>
+  <script src="../src/pages/datasets.js"></script>
 </body>
 </html>
